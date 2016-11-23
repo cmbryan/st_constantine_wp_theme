@@ -77,14 +77,6 @@ FONT FACE (IN YOUR FACE)
   }
 */
 /*
-@font-face {
-    font-family: 'Libre Baskerville';
-    src: url('library/fonts/LibreBaskerville-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
-/*
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
@@ -97,7 +89,7 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 73, ../scss/partials/_typography.scss */
+/* line 63, ../scss/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;

@@ -239,8 +239,12 @@ can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
 function bones_fonts() {
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=PT+Sans');
+  // Or if you want bold and italics...
+  // wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=PT+Serif');
+  // Or if you want bold and italics...
+  // wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
