@@ -1,0 +1,3 @@
+#!/bin/bash
+echo Listening for .scss changes and compiling...
+compass watch &
