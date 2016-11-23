@@ -48,16 +48,20 @@
 
 				<div id="inner-header" class="wrap cf">
 
+					<!-- For site name as text... -->
+					<!--
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					-->
+					<!-- For site name as image... -->
+					<img alt="St. Constantine's Orthodox Christian Community" width="100%" src="<?php echo get_template_directory_uri(); ?>/site_header2.jpg"/>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
-
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
-    					         'container' => false,                           // remove nav container
+    					         'container' => true,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
     					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
     					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
