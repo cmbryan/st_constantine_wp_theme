@@ -146,16 +146,37 @@ body#tinymce.wp-editor {
 			}
 		}
 
-		blockquote {
-			margin: 0 0 1.5em 0.75em;
-			padding: 0 0 0 0.75em;
-			border-left: 3px solid $blue;
-			font-style: italic;
-			color: $meta-gray;
-
-			&:before {}
-
-		}
+			// blockquote tags were copied from the Libre theme: https://wordpress.org/themes/libre/
+			blockquote {
+				position: relative;
+				padding-top: 0.2em;
+				padding-bottom: 1.1em;
+				padding-left: 0em;
+				margin-left: 6em;
+			}
+			blockquote:before {
+				content: "\201c";
+				display: block;
+				font-size: 93px;
+				line-height: 1;
+				position: absolute;
+					top: 0;
+					left: -.53em;
+			}
+			blockquote blockquote {
+				margin-right: 0;
+			}
+			blockquote.alignleft,
+			blockquote.alignright {
+				max-width: 47%;
+			}
+			blockquote.alignleft,
+			blockquote.aligncenter {
+				margin-left: 4em;
+			}
+			blockquote.alignright {
+				margin-left: 3.5em;
+			}
 
 		dd {
 			margin-left: 0;

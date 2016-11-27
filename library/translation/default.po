@@ -162,7 +162,7 @@ msgid "Search the Site..."
 msgstr ""
 
 #: 404.php:11
-msgid "Epic 404 - Article Not Found"
+msgid "404 - Article Not Found"
 msgstr ""
 
 #: 404.php:17
