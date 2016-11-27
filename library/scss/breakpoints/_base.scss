@@ -80,6 +80,9 @@ LINK STYLES
 *********************/
 
 a, a:visited {
+	/* don't let anything underline links. Ever. */
+	text-decoration: none !important;
+
 	color: $link-color;
 
 	/* on hover */
@@ -155,25 +158,41 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $white;
 }
 
 	#logo {
-		line-height: 1.2em;
-		margin-top: 1.3em;
-		margin-bottom: 0;
+		position: relative;
+	}
+	#logo-text {
+		width: 100%;
+		position: absolute;
+		background-color: $semi-transparent-white;
+		bottom: 1.4em;
+		font-family: $logo;
+		color: $black;
+		padding-left: 1.5em;
+		padding-top: .4em;
+		padding-bottom: .55em;
+	}
+	#logo-sub {
+		font-family: $logo;
+		color: $black;
+		font-size: 1.8vw;
+		line-height: 2.2vw;
+		margin-bottom: 0em;
+	}
+	#logo-text .h1 {
+		font-family: $logo;
+		font-size: 5.3vw;
+		line-height: .85em;
 		a {
-			font-family: $logo;
-			font-size: 1.7em;
-			margin: 0 0;
+			font-size: 5.3vw;
 			color: $black;
 		}
-	}
-	#logosub {
-			font-family: $logo;
-			font-size: 1.2em;
-			margin: 0 0;
-			color: $black;
+		a:hover {
+			color: $gray;
+		}
+		margin-top: 0em;
 	}
 
 /*********************
@@ -181,7 +200,7 @@ NAVIGATION STYLES
 *********************/
 
 nav {
-	font-family: $sans-serif;
+	font-family: $logo; 
 }
 
 /*
@@ -193,10 +212,10 @@ and more scalable.
 */
 
 .nav {
-	font-face: $sans-serif;
-	background-color: black;
+	font-face: $serif;
+	background-color: $black;
 	border-bottom: 0;
-	margin-top: -.8em;
+	margin-top: .5vw;
 
 	li {
 
@@ -213,8 +232,11 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+				background-color: $nav-hover;
 			}
+		}
+		a:hover, a:link, a:focus, a:active {
+			text-decoration: none;
 		}
 
 		&:first-child {}
@@ -258,7 +280,9 @@ and more scalable.
 	li.current_page_item,
 	li.current_page_ancestor {
 
-		a {}
+		a {
+			text-decoration: none;
+}
 
 	}  /* end current highlighters */
 
@@ -270,14 +294,14 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
 }
 
 		.hentry {
 			background-color: $white;
-			border-radius: 3px;
+			/* Border */
+			// border: 1px solid $border-color;
+			// border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -298,6 +322,7 @@ POSTS & CONTENT STYLES
 		.single-title,
 		.page-title,
 		.entry-title {
+			font-family: $sans-serif;
 			margin: 0;
 		}
 

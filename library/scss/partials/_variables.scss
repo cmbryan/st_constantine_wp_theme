@@ -22,12 +22,13 @@ $alert-red:         #fbe3e4;
 $alert-green:       #e6efc2;
 $alert-blue:        #d5edf8;
 
-$black:             #323944;
+$black:             #202020;
+$nav-hover:         #603032;
 $white:             #fff;
 
 $light-gray:        #f8f9fa;
 $gray:              #eaedf2;
-$title-color:       #a94030;
+$title-color:       #603032;
 $text-color:        #000000;
 $meta-gray:         #9fa6b4;
 
@@ -43,7 +44,8 @@ $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
-
+ 
+$semi-transparent-white: rgba(255, 255, 255, 0.58);
 
 /*
 Here's a great tutorial on how to
