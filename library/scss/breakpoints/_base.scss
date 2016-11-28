@@ -326,6 +326,13 @@ POSTS & CONTENT STYLES
 		.single-title,
 		.page-title,
 		.entry-title {
+			a, a:visited {
+				color: $title-color;
+			}
+			a:hover {
+				color: $blue;
+			}
+			border-bottom: solid 1px $nav-hover;
 			font-family: $serif;
 			margin: 0;
 		}
@@ -333,7 +340,6 @@ POSTS & CONTENT STYLES
 		.single-title {}
 
 		.page-title {
-			border-bottom: solid 1px $nav-hover;
 		}
 
 		.entry-title {}
