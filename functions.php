@@ -249,4 +249,13 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
+//exclude 'lectionary' category from news feed
+function exclude_category($query) {
+  if ( $query->is_home() ) {
+    $query->set('cat', '-8');
+  }
+  return $query;
+}
+add_filter('pre_get_posts', 'exclude_category');
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
