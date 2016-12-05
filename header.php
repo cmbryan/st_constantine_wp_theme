@@ -60,11 +60,39 @@
 							</div>
 						</div>
 					</div>
+
+
+<?php function my_nav_wrap() {
+    // existing items
+    $wrap  = '<ul id="%1$s" class="%2$s">';
+    $wrap .= '%3$s';
+    // social media buttons
+    $wrap .= ' <li class="nav-button">';
+    $wrap .= '  <a href="' . get_bloginfo('url', 'display') . '?feed=rss2" >';
+    $wrap .= '   <img width="28em" src="' . trailingslashit(get_template_directory_uri()) . 'flat_rss.png"/>';
+    $wrap .= '  </a>';
+    $wrap .= ' </li>';
+    $wrap .= ' <li class="nav-button">';
+    $wrap .= '  <a href="'. get_bloginfo('url', 'display') . '/index.php/subscribe">';
+    $wrap .= '   <img width="28em" src="' . trailingslashit(get_template_directory_uri()) . 'flat_email.png"/>';
+    $wrap .= '  </a>';
+    $wrap .= ' </li>';
+    $wrap .= ' <li class="nav-button">';
+    $wrap .= '  <a href="http://facebook.com/yorkorthodox" target="_blank">';
+    $wrap .= '   <img width="28em" src="' . trailingslashit(get_template_directory_uri()) . 'flat_facebook.png"/>';
+    $wrap .= '  </a>';
+    $wrap .= ' </li>';
+
+    $wrap .= '</ul>';
+  return $wrap;
+}
+?>
+
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
     					         'container' => true,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-    					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+    					         'menu' => __( 'The Main Menu', 'stconstantinetheme' ),  // nav name
     					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
     					         'theme_location' => 'main-nav',                 // where it's located in the theme
     					         'before' => '',                                 // before the menu
@@ -72,7 +100,8 @@
         			               'link_before' => '',                            // before each link
         			               'link_after' => '',                             // after each link
         			               'depth' => 0,                                   // limit the depth of the nav
-    					         'fallback_cb' => ''                             // fallback function (if there is one)
+    					         'fallback_cb' => '',                             // fallback function (if there is one)
+    					         'items_wrap' => my_nav_wrap()
 						)); ?>
 
 					</nav>

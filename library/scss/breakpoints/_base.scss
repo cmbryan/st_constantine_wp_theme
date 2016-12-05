@@ -287,6 +287,25 @@ and more scalable.
 
 	}  /* end current highlighters */
 
+	li.nav-button {
+		float: right;
+		a {
+			// don't change background color
+			&:hover, &:focus {
+				background-color: $black;
+			}
+
+			padding-top: .5em;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-right: .65em;
+			img {
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+
 } /* end .nav */
 
 
