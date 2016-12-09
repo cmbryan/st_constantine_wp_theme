@@ -1,3 +1,14 @@
+<?php
+/*
+ Template Name: Wordpress default (do not use)
+ *
+ * Copy this to a file named page-<...>.php to make a new page template.
+ * Don't use this template directly.
+ *
+ * For more info: http://codex.wordpress.org/Page_Templates
+*/
+?>
+
 <?php get_header(); ?>
 
 			<div id="content">
