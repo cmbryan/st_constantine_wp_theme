@@ -239,12 +239,7 @@ can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
 function bones_fonts() {
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=PT+Serif|PT+Sans|Cinzel');
-  // Or if you want bold and italics...
-  // wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
-  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=');
-  // Or if you want bold and italics...
-  // wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+  wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Cinzel|PT+Serif:400,400i,700|PT+Sans:400,700');
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');

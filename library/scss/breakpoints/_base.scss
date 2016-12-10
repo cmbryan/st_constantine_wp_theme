@@ -162,6 +162,10 @@ HEADER STYLES
 
 	#logo {
 		position: relative;
+		margin-top: 20px;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	#logo-text {
 		width: 100%;
@@ -173,13 +177,6 @@ HEADER STYLES
 		padding-left: 1.5em;
 		padding-top: .4em;
 		padding-bottom: .55em;
-	}
-	#logo-sub {
-		font-family: $logo;
-		color: $black;
-		font-size: 1.8vw;
-		line-height: 2.2vw;
-		margin-bottom: 0em;
 	}
 	#logo-text .h1 {
 		font-family: $logo;
@@ -193,6 +190,21 @@ HEADER STYLES
 			color: $gray;
 		}
 		margin-top: 0em;
+	}
+	#logo-text .h2 {
+		font-family: $logo;
+		color: $black;
+		font-size: 1.8vw;
+		line-height: 2.2vw;
+		margin-bottom: 0em;
+	}
+	#logo-text .h3 {
+		font-family: $serif;
+		color: #808080;
+		font-style: italic;
+		font-size: 1.62vw;
+		line-height: 2.2vw;
+		margin-bottom: 0em;
 	}
 
 /*********************
@@ -352,7 +364,7 @@ POSTS & CONTENT STYLES
 				color: $blue;
 			}
 			border-bottom: solid 1px $nav-hover;
-			font-family: $serif;
+			font-family: $sans-serif;
 			margin: 0;
 		}
 
