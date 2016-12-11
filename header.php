@@ -43,15 +43,21 @@
 		<div id="container">
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				<div id="inner-header" class="wrap cf">
-					<?php $header_img=get_template_directory_uri()."/website_header.png"; ?>
-					<div id="logo">
-						<img id="logo-img" src="<?php echo $header_img; ?>" width="100%" />
-						<div id="logo-text">
-							<div class="h2"><?php bloginfo('description'); ?></div>
-							<div class="h1" itemscope itemtype="http://schema.org/Organization">
-								<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+					<div id="icon-area">
+						<?php $left_img=get_template_directory_uri()."/constantine2.jpg"; ?>
+						<img id="left-img" src="<?php echo $left_img; ?>" />
+					</div>
+					<div id="banner">
+						<?php $background_img=get_template_directory_uri()."/website_header.png"; ?>
+						<div id="logo">
+							<img id="background-img" src="<?php echo $background_img; ?>" width="100%" />
+							<div id="logo-text">
+								<div class="h2"><?php bloginfo('description'); ?></div>
+								<div class="h1" itemscope itemtype="http://schema.org/Organization">
+									<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+								</div>
+								<div class="h3">The Church of Antioch in the City of York</div>
 							</div>
-							<div class="h3">The Church of Antioch in the City of York</div>
 						</div>
 					</div>
 

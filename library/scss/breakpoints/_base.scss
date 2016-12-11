@@ -158,7 +158,21 @@ HEADER STYLES
 *********************/
 
 .header {
+	overflow: hidden;
 }
+
+	#icon-area {
+		float: left;
+		width: 20%;
+	}
+
+	#left-img {
+		width: 100%;
+	}
+
+	#banner {
+		overflow: hidden;
+	}
 
 	#logo {
 		position: relative;
@@ -170,7 +184,6 @@ HEADER STYLES
 	#logo-text {
 		width: 100%;
 		position: absolute;
-		background-color: $semi-transparent-white;
 		bottom: 1.4em;
 		font-family: $logo;
 		color: $black;
@@ -180,14 +193,14 @@ HEADER STYLES
 	}
 	#logo-text .h1 {
 		font-family: $logo;
-		font-size: 5.3vw;
+		font-size: 4.9vw;
 		line-height: .85em;
 		a {
-			font-size: 5.3vw;
+			font-size: 4.9vw;
 			color: $black;
 		}
 		a:hover {
-			color: $gray;
+			color: $black;
 		}
 		margin-top: 0em;
 	}
